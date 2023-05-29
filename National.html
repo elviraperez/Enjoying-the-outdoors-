@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Tab Title -->
+  <title> National Parks </title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--css stylesheet-->
+  <link rel="stylesheet" href="National.css"></link>
+
+  <!--Fivcon Icon-->
+  <link rel="icon" type="image/x-icon" href="https://previews.123rf.com/images/vladklok/vladklok1803/vladklok180300615/98252552-vector-mountain-landscape-with-trees-mountains-and-clouds.jpg">
+  
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <!-- navbar here -->
+        <nav class="navbar navbar-expand-lg" style="background-color: #748678;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> </a>
+                <!--icon img -->
+            <img src="https://cdn-icons-png.flaticon.com/512/1127/1127813.png" alt="" width="30" height="24">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html"> Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="National.html"> National Parks </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Mountains.html" > Mountains Information </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>  
+
+        
+      </header>
+
+      <br>
+
+      <main>
+        
+        
+        <div>
+                 <!-- dropdown search bars -->
+        <div class="search-wrapper">
+            <label  class="form-label"> Search Park </label>
+            <select name="parkSelect" id="parkSelect">
+                <option  selected="selected" class="search-input">Select Park</option>
+            </select>
+            
+        </div>
+        <!-- second dropdown -->
+        <div>
+            <label  class="form-label" for="parkLocation" > Select location type </label>
+            <select name="parkLocation" id="parkLocation">
+                <option selected="selected" class="search-input"> Park Location </option>
+            </select>
+        </div>
+        <button type="search" id="searchButton"> Select </button>
+
+        <!-- onclick -->
+        <div id="parkInfo"></div>
+
+        </div>
+    
+      </main>
+
+  
+    <!-- place footer here -->
+     <!-- change color of boarder -->
+    <footer class="text-center text-white fixed-bottom" style="background-color: #21081a";>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <div class="container">
+                  <p>&copy; 2023 Your Company. All rights reserved.</p>
+                </div>
+              </ul>
+        </ul>
+
+    </footer>
+  
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+    <!-- linking javaScript-->
+    <script src="scripts/locationData.js"></script>
+    <script src="scripts/nationalParkData.js"></script>
+    <script src="scripts/parkTypeData.js"></script>
+    <script src="scripts/National.JS"></script>
+  
+   
+</body>
+
+</html>
